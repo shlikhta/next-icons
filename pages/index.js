@@ -1,29 +1,12 @@
 import React from "react";
-import { BeakerIcon } from '@heroicons/react/solid'
-import { CakeIcon } from '@nexticons/react/solid'
+import { SolidIcons } from "../src/components/SolidIcons";
+import { OutlineIcons } from "../src/components/OutlineIcons";
 
 export default function Home() {
   return (
-    <div className='container'>
-      <div className='icon-list'>
-          <div className='icon-list__item'>
-              <CakeIcon/>
-          </div>
-          <div className='icon-list__item'>
-              <BeakerIcon className="h-5 w-5 text-blue-500"/>
-          </div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-          <div className='icon-list__item'>1</div>
-      </div>
+    <div className="container">
+      <OutlineIcons />
+      <SolidIcons />
     </div>
-  )
+  );
 }
