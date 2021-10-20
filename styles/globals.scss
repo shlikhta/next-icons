@@ -15,23 +15,45 @@ a {
   box-sizing: border-box;
 }
 
+.icons-container {
+  display: flex;
+  //grid-template-columns: 1fr 1fr;
+  //grid-auto-rows: min-content;
+  gap: 32px;
+  background-color: #282c34;
+}
 .icon-list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  width: 50%;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 1px;
   padding-bottom: 1px;
   background-color: #eaeaea;
-  &__item {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
+&__item {
+   display: flex;
+   //width: 100%;
+   //height: 100%;
+  flex-direction: column;
+  gap: 12px 0;
+   padding: 10px;
+   align-items: center;
+   justify-content: center;
+   background-color: #ffffff;
+  div {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+  }
+ }
+  &__name {
+    font-size: 12px;
   }
 }
 
-@import "next-icon";
-
+.next-icon {
+  width: 32px;
+  height: 32px;
+  color: orange;
+  stroke-width: 1;
+}

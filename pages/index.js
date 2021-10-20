@@ -1,10 +1,10 @@
 import React from "react";
-import { SolidIcons } from "../src/components/SolidIcons";
 import { OutlineIcons } from "../src/components/OutlineIcons";
+import { SolidIcons } from "../src/components/SolidIcons";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="icons-container">
       <OutlineIcons />
       <SolidIcons />
     </div>
