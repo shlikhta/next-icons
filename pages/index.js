@@ -19,9 +19,10 @@ export default function Home() {
           <div className='range__value'>{lineWidth}</div>
           <style>
             {`
-           .next-icon {
-          stroke-width: ${lineWidth};
-        }`}
+               .next-icon {
+                stroke-width: ${lineWidth};
+              }
+            `}
           </style>
         </div>
       </div>
