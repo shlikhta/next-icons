@@ -15,11 +15,55 @@ a {
   box-sizing: border-box;
 }
 
+.header {
+  position: sticky;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.35);
+}
+
+.search {
+  &__input {
+    display: block;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+  }
+}
+
+.range {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: 20px;
+  align-items: center;
+  //padding: 40px 20px;
+  //background-color: #282c34;
+  &__value {
+    //padding: 0 20px 20px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+  }
+}
+
 .icons-container {
   display: flex;
   //grid-template-columns: 1fr 1fr;
   //grid-auto-rows: min-content;
   gap: 32px;
+  //margin-top: 10px;
   background-color: #282c34;
 }
 .icon-list {
@@ -28,24 +72,25 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 1px;
+  padding-top: 1px;
   padding-bottom: 1px;
   background-color: #eaeaea;
-&__item {
-   display: flex;
-   //width: 100%;
-   //height: 100%;
-  flex-direction: column;
-  gap: 12px 0;
-   padding: 10px;
-   align-items: center;
-   justify-content: center;
-   background-color: #ffffff;
-  div {
-    width: 32px;
-    height: 32px;
-    background-color: white;
+  &__item {
+    display: flex;
+    //width: 100%;
+    //height: 100%;
+    flex-direction: column;
+    gap: 12px 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    div {
+      width: 32px;
+      height: 32px;
+      background-color: white;
+    }
   }
- }
   &__name {
     font-size: 12px;
   }
@@ -55,5 +100,4 @@ a {
   width: 32px;
   height: 32px;
   color: orange;
-  stroke-width: 1;
 }
