@@ -15,12 +15,14 @@ a {
   box-sizing: border-box;
 }
 
+
 .header {
   position: sticky;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 100px;
   align-items: center;
   gap: 20px;
+  width: 100%;
   z-index: 100;
   top: 0;
   left: 0;
@@ -44,10 +46,7 @@ a {
   grid-template-columns: 1fr 80px;
   gap: 20px;
   align-items: center;
-  //padding: 40px 20px;
-  //background-color: #282c34;
   &__value {
-    //padding: 0 20px 20px;
     font-size: 32px;
     text-align: center;
     font-weight: 500;
@@ -57,13 +56,33 @@ a {
     width: 100%;
   }
 }
+.swatch {
+  width: 100px;
+  height: 43px;
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+  cursor: pointer;
+}
 
+.popover {
+  position: absolute;
+  top: 76px;
+  right: 20px;
+  z-index: 2;
+}
+.cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .icons-container {
+  overflow: hidden;
   display: flex;
-  //grid-template-columns: 1fr 1fr;
-  //grid-auto-rows: min-content;
   gap: 32px;
-  //margin-top: 10px;
   background-color: #282c34;
 }
 .icon-list {
@@ -77,8 +96,6 @@ a {
   background-color: #eaeaea;
   &__item {
     display: flex;
-    //width: 100%;
-    //height: 100%;
     flex-direction: column;
     gap: 12px 0;
     padding: 10px;
@@ -100,4 +117,5 @@ a {
   width: 32px;
   height: 32px;
   color: orange;
+  stroke-width: 1;
 }
