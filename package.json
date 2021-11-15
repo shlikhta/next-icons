@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "buildList": "node ./src/build-list.js",
+    "dev": "npm run buildList && next dev",
+    "build": "npm run buildList && next build",
     "start": "next start",
-    "export": "next export",
+    "export": "npm run buildList && next export",
     "lint": "next lint"
   },
   "dependencies": {
+    "camelcase": "^6.2.1",
     "next": "^12.0.3",
     "nexticons-react": "^0.0.7",
     "react": "^17.0.2",
