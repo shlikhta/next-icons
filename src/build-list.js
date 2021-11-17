@@ -1,6 +1,6 @@
 const fs = require("fs").promises;
 const camelcase = require("camelcase");
-const packageName = 'nexticons-react'
+const packageName = 'nexticons'
 async function getIcons(style) {
   let files = await fs.readdir(`./node_modules/${packageName}/${style}`);
 
