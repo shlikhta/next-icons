@@ -198,6 +198,8 @@ WritingPenIcon,
 XIcon,
 XRoundedIcon,
 XSquareIcon,
+ZoomInIcon,
+ZoomOutIcon,
 } from "nexticons/outline";
   
 
@@ -401,7 +403,9 @@ const icons = [
 {name: "WritingPenIcon", icon: <WritingPenIcon className="next-icon" />}, 
 {name: "XIcon", icon: <XIcon className="next-icon" />}, 
 {name: "XRoundedIcon", icon: <XRoundedIcon className="next-icon" />}, 
-{name: "XSquareIcon", icon: <XSquareIcon className="next-icon" />}
+{name: "XSquareIcon", icon: <XSquareIcon className="next-icon" />}, 
+{name: "ZoomInIcon", icon: <ZoomInIcon className="next-icon" />}, 
+{name: "ZoomOutIcon", icon: <ZoomOutIcon className="next-icon" />}
 ];
   
 export default icons; 
